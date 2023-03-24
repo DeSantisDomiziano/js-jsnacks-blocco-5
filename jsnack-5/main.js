@@ -9,13 +9,17 @@ const names = ['giorgio', 'pierluigi', 'piergiacomo', 'pierfausto', 'annamaria',
 //creo array vuoto cosi in un secondo momento pusho dentro
 const new_name = []
 // funzione che servirà per pushare nell'array vuoto
-function new_array(array, x, y_maxlenghtarray) { 
-    for (let i = x; i < y_maxlenghtarray; i++) {
-        const push_name = array[x];
-        new_name.push(push_name)
+function new_array(array, x, y_maxlenghtarray) {
+    if(x < y_maxlenghtarray && x >= 0 && y_maxlenghtarray <= array.length ) {
+        for (let i = x; i < y_maxlenghtarray; i++) {
+            const push_name = array[i];
+            new_name.push(push_name)
+        }
+    } else {
+        alert(`il valore minimo di questo array(${array}) è 0 e il valore massimo è ${array.length}`)
     }
+    
 }
 
-
-new_array(names, 3, 6)
+new_array(names, 0, 8)
 console.log(new_name);
