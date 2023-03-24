@@ -2,6 +2,7 @@
 Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza. Calcola quanto pesano tutte le zucchine.
 */
 
+// creo il mio array di oggetti
 const zucchine = [
     {
         verietà: 'nera',
@@ -56,6 +57,11 @@ const zucchine = [
 ]
 
 
+
+//ciclo dentro al mio array per avere accesso a tutti i suoi indici (oggetti)
+// ora prendo il la chiave e il valore che mi interessano 
+// creo una variabile globale e gli assegno un valore 
+// ora posso sommare il valore preso dall'oggetto alla mia variabile globale ed infine avere il risulato finale
 let totale_peso = 0
 zucchine.forEach(zucchina => {
     const g_per_zucchina = zucchina.peso
