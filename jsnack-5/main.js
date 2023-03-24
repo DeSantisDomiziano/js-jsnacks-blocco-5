@@ -16,7 +16,7 @@ function new_array(array, x, y_maxlenghtarray) {
             new_name.push(push_name)
         }
     } else {
-        alert(`il valore minimo di questo array(${array}) è 0 e il valore massimo è ${array.length}`)
+        alert(`il valore minimo di questo array è 0 e il valore massimo è ${array.length}`)
     }
     
 }
